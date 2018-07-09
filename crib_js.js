@@ -37,6 +37,14 @@ $('.slider-nav').slick({
         var button_count = $(this).find('.button_count');
         var kit_checkbox =$(this).find('.buttonrow__kit .checkbox');
         button_count.insertBefore(kit_checkbox);
+     
+     
+// add ')'  -> a)hdhhd; b)jdjsdhjl....
+     
+      var letters = "abcdefghijklmnopqrstuvwxyz";
+    $.each($(".legal .legal_letters > li"), function(i) {
+        $(this).attr("mark", letters[i] + ")");
+    });
 
     })
 
