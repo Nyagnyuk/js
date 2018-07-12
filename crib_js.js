@@ -7,6 +7,15 @@ var pathname = window.location.pathname;
         $('#ma-mobilemenu li.home').addClass('active');
     }
 
+//если url co /  -> а в ссылке без href="main.htmp"
+ var pathname = window.location.pathname;
+    $('.nav li a').each(function () {
+        var attr = $(this).attr('href');
+        var entry = pathname.indexOf(attr);
+        if (entry>0){
+            $(this).parents('li').addClass('active');
+        }
+    });
 
 //Slik
 
